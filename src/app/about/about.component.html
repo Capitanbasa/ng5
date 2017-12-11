@@ -1,0 +1,12 @@
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Send me back to Home <a (click)="sendMeHome()">Back</a></p>
+      </div>
+      <div class="col-md-6">
+          <div class="alert alert-success" role="alert" *ngFor="let goal of goals" >{{goal}}</div>
+      </div>
+    </div>
+  </div>
+</section>

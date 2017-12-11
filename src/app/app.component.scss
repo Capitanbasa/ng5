@@ -1,0 +1,17 @@
+.navbar-dark{
+    background: #000000;
+}
+.navbar-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .nav-item{
+        display: inline-block;
+        list-style: none;
+        padding: 15px 15px;
+        a{
+            font-size: 18px;
+            color: #ffffff;
+        }
+    }
+}

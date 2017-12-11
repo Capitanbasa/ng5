@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add a Bucket List</h2>
+        <p>Your Bucket List ({{ itemCount}})</p>
+      </div>
+      <div class="col-md-6">
+          <div class="col-md-12">
+              <h3>use the form below to do a bucket lit</h3>
+              <form>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="item" placeholder="life goal" [(ngModel)]="goatText">
+                  </div>
+                  <button type="submit" class="btn btn-primary" (click)="addItem()">{{btnTxt}}</button>
+              </form>
+            </div>
+            <div class="col-md-12" [@goals]="goals.length">
+              <div class="alert alert-success" role="alert" *ngFor="let goal of goals let i = index" (click)="removeItem(i)">{{goal}}</div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
